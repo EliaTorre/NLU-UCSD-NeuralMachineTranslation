@@ -24,3 +24,36 @@ The **Multi30k** dataset is a collection of 31,014 parallel English-German sente
 <div align="center">
 <img src="NLU Images/dataset.png" alt="Dataset Specs" width="40%">
 </div>
+
+<hr/>
+
+## Pre-Processing
+TODO
+
+<hr/>
+
+## Sequence to Sequence Learning with NN - Implementation
+TODO
+
+<hr/>
+
+## Neural Machine Translation by Jointly Learning to Align and Translate - Implementation
+TODO
+
+<hr/>
+
+## Attention Is All You Need - Implementation
+TODO
+
+<hr/>
+
+## Evalutation & Results
+TODO
+
+<hr/>
+
+## Contact
+Feel free to e-mail etorre@student.ethz.ch.
+  
+## Acknowledgements
+The code in this project is inspired and adapted from several different sources that can be found in the paper associated with this repository. 
