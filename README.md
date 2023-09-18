@@ -32,7 +32,7 @@ TODO
 
 <hr/>
 
-## Sequence to Sequence Learning with NN - Implementation
+## Sequence to Sequence Learning with Neural Networks - Implementation
 TODO
 
 <hr/>
