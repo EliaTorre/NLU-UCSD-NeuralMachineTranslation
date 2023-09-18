@@ -19,4 +19,8 @@ It is necessary to note the reader that the implementations will slightly differ
 <hr/>
 
 ## Dataset
-The **Multi30k** dataset is a collection of 31,014 parallel English-German sentences that are used for training and evaluating neural machine translation models. The sentences are split into train, validation, and test sets, and the dataset also includes a human-annotated English-German parallel corpus. In the referenced article of 2016, the Multi30K dataset is introduced as an extension of the Flickr30K dataset, which has been developed as a dataset containing images sourced from online photo-sharing websites, each of which paired with five English descriptions, which were collected from Amazon Mechanical Turk1.
+The **Multi30k** dataset is a collection of 31,014 parallel English-German sentences that are used for training and evaluating neural machine translation models. The sentences are split into train, validation, and test sets, and the dataset also includes a human-annotated English-German parallel corpus. In the referenced article of 2016, the Multi30K dataset is introduced as an extension of the Flickr30K dataset, which has been developed as a dataset containing images sourced from online photo-sharing websites, each of which paired with five English descriptions, which were collected from Amazon Mechanical Turk1. In particular, the Multi30K dataset presents the following characteristics:
+
+<div align="center">
+<img src="NLU Images/dataset.png" alt="Dataset Specs" width="40%">
+</div>
