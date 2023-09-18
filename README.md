@@ -15,3 +15,8 @@ An Applied Evolutionary Analysis of Neural Machine Translation</h1>
 It is necessary to note the reader that the implementations will slightly differ from the ones described in the papers on two major aspects:
   1. **Architecture**: the models implemented in the associated notebook will, in some cases, differ in the depth of the network and weight initialization process, in the first case this is due to the available computational power, while in the second case is purposely done to follow more recent implementations of the architectures (e.g., BERT) described in the articles.
   2. **Dataset**: The training and evaluation of the architectures in all of the three articles has been performed on a specific sub-sampling of the "WMT ’14" French to English dataset. On the contrary, again due to limitations in computational power and a seek for novelty, the training and evaluation of the architectures implemented in this paper has been performed on the "Multi30K" German to English dataset.
+
+<hr/>
+
+## Dataset
+The **Multi30k** dataset is a collection of 31,014 parallel English-German sentences that are used for training and evaluating neural machine translation models. The sentences are split into train, validation, and test sets, and the dataset also includes a human-annotated English-German parallel corpus. In the referenced article of 2016, the Multi30K dataset is introduced as an extension of the Flickr30K dataset, which has been developed as a dataset containing images sourced from online photo-sharing websites, each of which paired with five English descriptions, which were collected from Amazon Mechanical Turk1.
