@@ -72,15 +72,12 @@ The "replica" implementation here developed exploits:
 <hr/>
 
 ## Evalutation & Results
-In the following table, the BLEU scores of the different implementations discussed are reported:
+In the following table, the **BLEU scores** of the different implementations discussed are reported:
 <div align="center">
 <img src="NLU Images/results.png" alt="Dataset Specs" width="40%">
 </div>
 
-
-where Seq2Seq refers to <a href="NLU Papers/Sequence to Sequence Learning with Neural Networks.pdf">[1]</a> architecture, Attention to <a href="NLU Papers/Neural Machine Translation by Jointly Learning to Align and Translate.pdf">[2]</a> architecture and Transformer to <a href="NLU Papers/Attention Is All You Need.pdf">[3]</a> architecture. Whereas the Rep indicates the Replica, i.e., the "computationally-efficient" implementation presented in the notebooks associated to this repository. 
-
-Given the nature of the BLEU metric and the diversity of the training datasets, it is difficult to provide a comparison of the performances of the replicated architectures to the ones of the original implementations. However, we can perform an analysis among the replicated architectures. Indeed, we can notice that the advancements proposed by the papers are reflected in an evolution of the performances in the replicated architectures. In particular, the increase in performance from the introduction of the "Attention" mechanism is the most significant as it leads to an increase of approximately 17 BLEU score points.
+where *Seq2Seq* refers to <a href="NLU Papers/Sequence to Sequence Learning with Neural Networks.pdf">[1]</a> architecture, *Attention* to <a href="NLU Papers/Neural Machine Translation by Jointly Learning to Align and Translate.pdf">[2]</a> architecture and *Transformer* to <a href="NLU Papers/Attention Is All You Need.pdf">[3]</a> architecture. Whereas the *Rep* indicates the Replica, i.e., the "computationally-efficient" implementation presented in the notebooks associated to this repository. 
 
 <hr/>
 
@@ -88,4 +85,13 @@ Given the nature of the BLEU metric and the diversity of the training datasets, 
 Feel free to e-mail etorre@student.ethz.ch.
   
 ## Acknowledgements
-The code in this project is inspired and adapted from several different sources that can be found in the paper associated with this repository. 
+The code in this project is inspired and adapted from the following repositories:
+1. [farizrahman4u, “Seq2seq.”](https://github.com/farizrahman4u/seq2seq)
+2. [astorfi, “sequence-to-sequence-from- scratch.”](https://github.com/astorfi/sequence-to-sequence-from-scratch)
+3. [bentrevett, "pytorch-seq2seq."](https://github.com/bentrevett/pytorch-seq2seq)
+4. [macournoyer, "neuralconvo."](https://github.com/macournoyer/neuralconvo)
+5. [thomlake, "pytorch-attention."](https://github.com/thomlake/pytorch-attention)
+6. [graykode, "nlp-tutorial."](https://github.com/graykode/nlp-tutorialh)
+7. [Nick-Zhao-Engr, "Machine-translation."](https://github.com/Nick-Zhao-Engr/Machine-Translation)
+8. [jadore801120, "attention-is-all-you-need-pytorch."](https://github.com/jadore801120/attention-is-all-you-need-pytorch)
+9. [sooftware, "attentions."](https://github.com/sooftware/attentions)
