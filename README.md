@@ -28,22 +28,46 @@ The **Multi30k** dataset is a collection of 31,014 parallel English-German sente
 <hr/>
 
 ## Pre-Processing
-TODO
+The pre-processing of the dataset can be summarized in four main steps:
+1. **Token**: the "spacy modules" for English and German are loaded and two functions (German and English) are defined with the purpose of exploiting spacy library to tokenize the input sequences. Then, pytorch’s "Field" function is used to append *<SOS>* and *<EOS>* tokens and transform all of the words in the sentences to lowercase.
+2. **Split**: pytorch’s "dataset split" function is used to the obtain a Training (29k instances), Validation (1k instances) and Test (1k instances) sets, furthermore it specifies German as the source language and English as the target.
+3. **Vocabulary**: the vocabularies for the two languages are created from the training data enforcing that only words which appear at least twice are included, otherwise an *<UNK>* token is used.
+4. **Iterator**: in the last step, an iterable object with source and target information that maps tokenized words to their index in the vocabulary is created through "BucketIterator" with a batch size of 128.
 
 <hr/>
 
 ## Sequence to Sequence Learning with Neural Networks - Implementation
-TODO
+The "replica" implementation here developed exploits: 
+1. **Encoder**: 2 layers LSTM with 512 cells and 256 word-embeddings.
+2. **Decoder**: 4 layers LSTM with 512 cells and 256 word-embeddings.
+3. **Parameters, Loss & Optimizer**: approx. 14M, Cross-Entropy, ADAM.
+4. Epoch **training time** on NVIDIA Tesla K80: 30s x 15 Epochs.
+5. **BLEU Score**: approx. 14.5 depending on the random seed.
 
 <hr/>
 
 ## Neural Machine Translation by Jointly Learning to Align and Translate - Implementation
-TODO
+The "replica" implementation here developed exploits: 
+1. **Encoder**: BiDirectional GRU with 512 units.
+2. **Attention**: Weighted sum of all the intermediate context vectors through tanh activation.
+3. **Decoder**: GRU with 512 hidden units.
+4. **Parameters, Loss & Optimizer**: approx. 20.5M, Cross-Entropy, ADAM.
+5. Epoch **training time** on NVIDIA Tesla K80: 57s x 10 Epochs.
+6. **BLEU Score**: approx. 31.5 depending on the random seed.
 
 <hr/>
 
 ## Attention Is All You Need - Implementation
-TODO
+The "replica" implementation here developed exploits: 
+1. **Encoder**:
+   1.1. Multi-Head Attention: Splitted parallel computation of the Scaled-Dot Product Attention.
+   1.2. Position-wise Feed-Forward: Fully-connected feed-forward network with ReLU activation.
+2. **Decoder**:
+   2.1. Multi-Head Attention: Splitted parallel computation of the Scaled-Dot Product Attention.
+   2.2. Position-wise Feed-Forward: Fullt-connected feed-forward network with ReLU activation. 
+4. **Parameters, Loss & Optimizer**: approx. 9M, Cross-Entropy, ADAM.
+5. Epoch **training time** on NVIDIA Tesla K80: 17s x 10 Epochs.
+6. **BLEU Score**: approx. 35.7 depending on the random seed.
 
 <hr/>
 
