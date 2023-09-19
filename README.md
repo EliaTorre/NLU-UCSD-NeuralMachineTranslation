@@ -72,7 +72,13 @@ The "replica" implementation here developed exploits:
 <hr/>
 
 ## Evalutation & Results
-TODO
+In the following table, the BLEU scores of the different implementations discussed are reported:
+<div align="center">
+<img src="NLU Images/results.png" alt="Dataset Specs" width="40%">
+</div>
+where Seq2Seq refers to <a href="NLU Papers/Sequence to Sequence Learning with Neural Networks.pdf">[1]</a> architecture, Attention to <a href="NLU Papers/Neural Machine Translation by Jointly Learning to Align and Translate.pdf">[2]</a> architecture and Transformer to <a href="NLU Papers/Attention Is All You Need.pdf">[3]</a> architecture. Whereas the Rep indicates the Replica, i.e., the "computationally-efficient" implementation presented in the notebooks associated to this repository. 
+
+Given the nature of the BLEU metric and the diversity of the training datasets, it is difficult to provide a comparison of the performances of the replicated architectures to the ones of the original implementations. However, we can perform an analysis among the replicated architectures. Indeed, we can notice that the advancements proposed by the papers are reflected in an evolution of the performances in the replicated architectures. In particular, the increase in performance from the introduction of the "Attention" mechanism is the most significant as it leads to an increase of approximately 17 BLEU score points.
 
 <hr/>
 
